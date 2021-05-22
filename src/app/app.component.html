@@ -1,11 +1,5 @@
-<!-- <div *ngFor="let product of products$ | async">
-  <h2>{{product.title}}</h2>
-</div> -->
-
 <app-comp2></app-comp2>
 <app-comp1></app-comp1>
 
-<div *ngFor="let user of users$ | async">
-  <h2>{{user.login}}</h2>
-  <img height="150" [src]="user.avatar_url" [alt]="user.login" />
-</div>
+<app-user-list></app-user-list>
+<app-product-list></app-product-list>

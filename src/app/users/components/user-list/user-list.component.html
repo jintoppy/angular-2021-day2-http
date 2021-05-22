@@ -1,0 +1,4 @@
+<div *ngFor="let user of users$ | async">
+  <h2>{{user.login}}</h2>
+  <img height="150" [src]="user.avatar_url" [alt]="user.login" />
+</div>
